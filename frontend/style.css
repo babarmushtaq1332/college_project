@@ -1,0 +1,412 @@
+/* ============================= */
+/*       RESET & BASE STYLES      */
+/* ============================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* ============================= */
+/*           HEADER               */
+/* ============================= */
+header {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+header nav a {
+  color: #fff;
+  margin-left: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #000000;
+}
+
+/* ============================= */
+/*         SECTIONS & HERO        */
+/* ============================= */
+.section {
+  padding: 80px 50px;
+  margin-bottom: 60px;
+}
+
+.section:last-of-type {
+  margin-bottom: 0;
+}
+
+.gray {
+  background: #f0f2f5;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  text-align: center;
+  padding: 120px 50px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #d1e0e0;
+}
+
+.hero button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+  background: #000000;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero button:hover {
+  background: #000000;
+}
+
+/* ============================= */
+/*             CARDS              */
+/* ============================= */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  flex: 1 1 250px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* ============================= */
+/*            LISTS               */
+/* ============================= */
+.course-list li {
+  padding: 12px 15px;
+  background: #fff;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.course-list li:hover {
+  transform: translateX(5px);
+}
+
+/* ============================= */
+/*             FORMS              */
+/* ============================= */
+.form-box {
+  margin-bottom: 25px;
+}
+
+.form-box input {
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  transition: border 0.3s;
+}
+
+.form-box input:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.load-btn {
+  padding: 12px 20px;
+  background: #000000;
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.load-btn:hover {
+  background: #000000;
+}
+
+form input, form textarea {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.3s;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+form button {
+  padding: 12px 25px;
+  background: #000000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #000000;
+}
+
+/* ============================= */
+/*             TABLES             */
+/* ============================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+}
+
+table th, table td {
+  border: 1px solid #e0e0e0;
+  padding: 14px;
+  text-align: left;
+}
+
+table th {
+  background: #000000;
+  color: #fff;
+}
+
+/* ============================= */
+/*             STATS              */
+/* ============================= */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.stat {
+  background: #fff;
+  padding: 25px;
+  flex: 1 1 200px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.stat h3 {
+  font-size: 36px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+/* ============================= */
+/*             FOOTER             */
+/* ============================= */
+footer {
+  background: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 25px 50px;
+  font-size: 14px;
+}
+
+/* ============================= */
+/*             GUIDE              */
+/* ============================= */
+.guide {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  margin-top: 30px;
+}
+
+.guide h3 {
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.guide ol, .guide ul {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.guide li {
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.guide strong, .guide a {
+  color: #000000;
+}
+
+.guide a:hover {
+  text-decoration: underline;
+}
+
+/* ============================= */
+/*          RESPONSIVENESS        */
+/* ============================= */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav {
+    margin-top: 15px;
+  }
+
+  .cards, .stats {
+    flex-direction: column;
+  }
+}
+
+/* ============================= */
+/*        ADDITIONAL STYLES       */
+/* ============================= */
+button.primary-btn {
+  background: #000000;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button.primary-btn:hover {
+  background: #000000;
+}
+
+button.secondary-btn {
+  background: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button.secondary-btn:hover {
+  background: #ccc;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #000000;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+
+.scroll-to-top:hover {
+  background: #000000;
+}
+
+.section-title {
+  font-size: 32px;
+  color: #000000;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.section-divider {
+  height: 4px;
+  width: 80px;
+  background: #000000;
+  margin: 20px auto 40px auto;
+  border-radius: 2px;
+}
+
+.section-description {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-description a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.section-description a:hover {
+  text-decoration: underline;
+}
+
+.highlight {
+  background: #fffae6;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.button-group button {
+  flex: 1;
+}
